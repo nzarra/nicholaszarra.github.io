@@ -1,2 +1,2 @@
 # nicholaszarra.github.io
-Nick Zarra' Acadaemic Website
+Nick Zarra' Academic Website
