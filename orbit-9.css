@@ -7,7 +7,6 @@
  * Website: http://themes.3rdwavemedia.com/
 */
 body {
-  /*font-family: "Roboto";*/
   font-family: 'Source Sans Pro', sans-serif;
   color: rgb(85,85,85);
   /*color: black;*/
@@ -149,7 +148,7 @@ ul {
 /* This control sidebars*/
 
 .wrapper {
-  background: #4E2B7B;
+  background: #fff;
   max-width: 1920px;
   margin: 0 auto;
   position: relative;
@@ -166,8 +165,10 @@ ul {
   width: 240px;
   height: 100%;
   min-height: 800px;
+  padding-right: 0px;
+  padding-left: 100px;
   /*color: #fff;*/
-  color: rgb(85,85,85);
+  color: rgb(27, 19, 19);
 }
 .sidebar-wrapper a {
   /*color: #fff;*/
@@ -272,8 +273,9 @@ ul {
 .main-wrapper {
   background: #fff;
   padding: 60px;
-  padding-right: 100px;
-  padding-left: 280px;
+  padding-right: 500px;
+  padding-left: 400px;
+  width: 45%;
 }
 .main-wrapper .section-title {
   /*text-transform: uppercase;*/
@@ -315,8 +317,9 @@ ul {
     content:' ';
     display:block;
     border:0.5px solid #4E2B7B;
-    margin: 5px 0 0px 30px; 
-    width: 80%; 
+    margin: 0px 0 0px 30px; 
+    max-width: 100%; 
+    box-sizing: border-box; 
 }
 
 .main-wrapper .section {
@@ -366,6 +369,7 @@ ul {
   font-size: 0.8em;
   text-indent: 0px;
   font-style: oblique;
+  text-align: justify;
 }
 
 .main-wrapper .about {
@@ -374,6 +378,7 @@ ul {
   color: #545E6C;
   font-size: 0.9em;
   text-indent: 0px;
+  text-align: justify;
   /*font-style: oblique;*/
 }
 
@@ -383,6 +388,7 @@ ul {
   color: #545E6C;
   font-size: 0.9em;
   text-indent: 0px;
+  text-align: justify;
   /*font-style: oblique;*/
 }
 .main-wrapper .project-title {
@@ -441,16 +447,22 @@ ul {
   .sidebar-wrapper {
     position: static;
     width: inherit;
+    padding: 0;          /* Remove any unnecessary padding */
+    margin: 0;           /* Remove any left margin */
+    box-sizing: border-box; /* Ensure padding and borders are included in width calculation */
+    min-height: 400px;
   }
 
   .main-wrapper {
     padding: 30px;
+    width: 80%;
   }
 
   .main-wrapper .time {
     position: static;
-    display: block;
+    display: block;      /* Ensures it takes the full width */
     margin-top: 5px;
+    text-align: center;  /* Center-aligns text if necessary */
   }
 
   .main-wrapper .upper-row {
@@ -460,7 +472,6 @@ ul {
 @media (min-width: 992px) {
   .skillset .level-title {
     display: inline-block;
-    float: left;
     width: 30%;
     margin-bottom: 0;
   }
